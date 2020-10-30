@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $main-font;
+  background: $main-text-color;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  align-items: center;
+}
