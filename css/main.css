@@ -687,37 +687,11 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
+  margin-bottom: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .list-quality::before {
-    width: 450px;
-  }
-  .middle {
-    padding-top: 60px;
-  }
-  .quality {
-    text-align: center;
-  }
-  .quality-inside {
-    width: 450px;
-  }
-}
-
-.icon-group::before {
-  background-image: url(../images/quality/Group.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/quality/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/quality/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/quality/astronaut.svg);
+.middle {
+  padding-top: 60px;
 }
 
 .quality {
@@ -737,5 +711,60 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .list-quality:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-forms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .list-quality {
+    width: 354px;
+  }
+  .list-quality:nth-last-child(1n+3) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-forms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .list-quality {
+    width: 270px;
+  }
+  .list-quality:nth-last-child(n+1) {
+    margin-bottom: 0px;
+  }
+}
+
+.icon-group::before {
+  background-image: url(../images/quality/Group.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/quality/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/quality/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/quality/astronaut.svg);
 }
 /*# sourceMappingURL=main.css.map */

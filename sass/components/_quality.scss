@@ -1,38 +1,69 @@
-
 .list-quality {
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//   }
   &::before {
     display: block;
     content: '';
     height: 120px;
-    
     background-repeat: no-repeat;
     background-position: center;
     background-color: $other-color;
+    margin-bottom: 0;
+  }
+  }
+  
+.middle {
+  padding-top: 60px;
+}
+
+.quality {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-text-color;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.quality-inside {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  }
+
+@media screen and (max-width: 767px) {
+  .list-quality:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
-  @media screen and (max-width: 768px) {
-      .list-quality::before {
-        width: 450px;
-      }
-      .middle {
-        padding-top: 60px;
-      }
-      .quality {
-        // font-weight: 700;
-        // font-size: 14px;
-        // line-height: 1.14;
-        // letter-spacing: 0.03em;
-        // text-transform: uppercase;
-        // color: $title-text-color;
-        
-        text-align: center;
-      }
-      .quality-inside {
-        width: 450px;
-      }
+
+@media screen and (min-width: 768px) {
+  .list-forms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .list-quality {
+    width: 354px;
+   &:nth-last-child(1n+3){
+    margin-bottom: 30px;
+}
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .list-forms {
+    display: flex;
+   }
+    .list-quality {
+      width: 270px;
+      &:nth-last-child(n+1){
+        margin-bottom: 0px;
+    }
+}
 }
 
 .icon-group::before {
@@ -56,26 +87,6 @@
 //   padding-top: 94px;
 // }
 
-.quality {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $title-text-color;
-  margin-top: 30px;
-        margin-bottom: 10px;
-//   width: 450px;
-//   margin-top: 30px;
-//   margin-bottom: 10px;
-  
-}
 
-.quality-inside {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-  
-}
+
+
