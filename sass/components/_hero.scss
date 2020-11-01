@@ -3,27 +3,51 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/main/Overlay.jpg);
-  background-color: $logo-color;
-
-  height: 600px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+    url(../images/main/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    // block-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $logo-color;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+    // max-width: 1600px;
+  // height: 600px;
+  
+  // margin-left: auto;
+  // margin-right: auto;
 }
-.services {
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+// .services {
+  
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+// }
 
 .main-title {
+  margin-left: auto;
+    margin-right: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $main-text-color;
+  width: 360px;
+  // margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .main-title {
+   font-size: 44px;
+  line-height: 1.36; 
   width: 660px;
-  margin: 0 auto;
+  }
+  .overlay {
+    padding-top: 200px;
+ padding-bottom: 200px;
+  }
+
+  
 }
