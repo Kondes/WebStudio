@@ -1,29 +1,52 @@
-// .list-quality {
+
+.list-quality {
 //   &:not(:last-child) {
 //     margin-right: 30px;
 //   }
-//   &::before {
-//     display: block;
-//     content: '';
-//     height: 120px;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-color: $other-color;
-//   }
-// }
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $other-color;
+  }
+}
+  @media screen and (max-width: 768px) {
+      .list-quality::before {
+        width: 450px;
+      }
+      .middle {
+        padding-top: 60px;
+      }
+      .quality {
+        // font-weight: 700;
+        // font-size: 14px;
+        // line-height: 1.14;
+        // letter-spacing: 0.03em;
+        // text-transform: uppercase;
+        // color: $title-text-color;
+        
+        text-align: center;
+      }
+      .quality-inside {
+        width: 450px;
+      }
+}
 
-// .icon-group::before {
-//   background-image: url(../images/quality/Group.svg);
-// }
-// .icon-clock::before {
-//   background-image: url(../images/quality/clock.svg);
-// }
-// .icon-diagram::before {
-//   background-image: url(../images/quality/diagram.svg);
-// }
-// .icon-astronaut::before {
-//   background-image: url(../images/quality/astronaut.svg);
-// }
+.icon-group::before {
+  background-image: url(../images/quality/Group.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/quality/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/quality/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/quality/astronaut.svg);
+}
 
 // .list-forms {
 //   display: flex;
@@ -33,22 +56,26 @@
 //   padding-top: 94px;
 // }
 
-// .quality {
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.03em;
-//   text-transform: uppercase;
-//   color: $title-text-color;
+.quality {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-text-color;
+  margin-top: 30px;
+        margin-bottom: 10px;
+//   width: 450px;
 //   margin-top: 30px;
 //   margin-bottom: 10px;
-// }
+  
+}
 
-// .quality-inside {
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.71;
-//   letter-spacing: 0.03em;
-//   color: $primary-text-color;
-//   width: 270px;
-// }
+.quality-inside {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  
+}

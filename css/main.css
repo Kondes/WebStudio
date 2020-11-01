@@ -312,7 +312,7 @@ img {
   color: #000000;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .logo {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -323,7 +323,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .logo {
     margin-right: 88px;
   }
@@ -678,5 +678,64 @@ img {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/bg-desktop@2x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/bg-desktop@2x.jpg");
   }
+}
+
+.list-quality::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+@media screen and (max-width: 768px) {
+  .list-quality::before {
+    width: 450px;
+  }
+  .middle {
+    padding-top: 60px;
+  }
+  .quality {
+    text-align: center;
+  }
+  .quality-inside {
+    width: 450px;
+  }
+}
+
+.icon-group::before {
+  background-image: url(../images/quality/Group.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/quality/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/quality/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/quality/astronaut.svg);
+}
+
+.quality {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.quality-inside {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 /*# sourceMappingURL=main.css.map */
