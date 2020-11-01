@@ -3,7 +3,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/main/bg-mobile.jpg);
+    url("../images/main/bg-mobile.jpg");
     background-repeat: no-repeat;
     // block-size: cover;
     background-size: cover;
@@ -14,21 +14,11 @@
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
-    // max-width: 1600px;
-  // height: 600px;
-  
-  // margin-left: auto;
-  // margin-right: auto;
-}
-// .services {
-  
-  // padding-top: 200px;
-  // padding-bottom: 200px;
-// }
-
-.main-title {
+    }
+    
+    .main-title {
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
@@ -38,16 +28,61 @@
   width: 360px;
   // margin: 0 auto;
 }
+    
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .overlay {
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ), url("../images/main/bg-mobile@2x.jpg") ;
+}
+}
+
+    @media screen and (min-width: 768px) {
+      .overlay {
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ), url("../images/main/bg-tablet.jpg") ; 
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .overlay {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url("../images/main/bg-tablet@2x.jpg") ;
+  }
+  }
 @media screen and (min-width: 1200px) {
   .main-title {
    font-size: 44px;
-  line-height: 1.36; 
-  width: 660px;
+   line-height: 1.36; 
+   width: 660px;
   }
   .overlay {
     padding-top: 200px;
- padding-bottom: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url("../images/main/bg-desktop.jpg") ;
   }
-
-  
 }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .overlay {
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ), url("../images/main/bg-desktop@2x.jpg") ;
+}
+}
+  
+
