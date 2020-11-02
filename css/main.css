@@ -824,4 +824,94 @@ img {
     margin-bottom: 50px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .icon-list-team {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .icon-list-team:hover {
+    background-color: #2196f3;
+  }
+  .team-svg {
+    fill: #afb1b8;
+    width: 20px;
+    height: 20px;
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .icon-list-team:hover .team-svg {
+    fill: white;
+  }
+  .list-icon-svg:not(:last-child) {
+    margin-right: 32px;
+  }
+  .list-ic-svg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-us {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .section-second {
+    background: #f5f4fa;
+    margin-top: 60px;
+  }
+  .photo-border {
+    width: 450px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .photo-border:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .team {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 28px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+  }
+  .name {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+  }
+  .name-team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  .name-profil {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
