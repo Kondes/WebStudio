@@ -26,6 +26,8 @@ img {
 
 .container {
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -69,7 +71,7 @@ img {
   color: #000000;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .logo {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -546,12 +548,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.second-footer {
-  text-align: center;
-  margin-bottom: 60px;
-  margin-top: 60px;
-}
-
 .list-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,16 +591,6 @@ img {
   background-color: #2196f3;
 }
 
-.list-adress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .footer-svg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -618,13 +604,18 @@ img {
   margin-right: 10px;
 }
 
-.all-footer {
-  text-align: center;
-  padding: 60px 15px;
-}
-
 .send-button {
-  margin-left: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
   background-color: #2196f3;
@@ -646,7 +637,6 @@ img {
 }
 
 .text-mail {
-  display: inline-block;
   width: 100%;
   height: 50px;
   margin-top: 20px;
@@ -674,5 +664,113 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .second-footer {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+  .list-adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .all-footer {
+    text-align: center;
+    padding: 60px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .all-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-right: 89px;
+    padding-left: 76px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  .footer-form {
+    margin: 0 auto;
+  }
+  .second-footer {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+  .list-adress {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .first-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .second-footer {
+    margin-left: 70px;
+  }
+  .list-icon {
+    margin-top: 20px;
+  }
+  .all-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .subscribe-mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .send-button {
+    margin-left: 12px;
+  }
+  .text-mail {
+    width: 358px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
