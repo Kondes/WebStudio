@@ -120,13 +120,19 @@
   }
   
   .menu-cont {
+display: none;
+
     position: absolute;
     background: $footer-hover-color;
     width: 100%;
+    
     left: 0;
     align-items: center;
     padding-top: 60px; 
     padding-bottom: 60px;
+    &.is-open {
+      display: block;
+    }
   }
   .header {
     position: relative;

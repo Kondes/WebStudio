@@ -471,6 +471,7 @@ img {
     margin-bottom: 40px;
   }
   .menu-cont {
+    display: none;
     position: absolute;
     background: white;
     width: 100%;
@@ -480,6 +481,9 @@ img {
             align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .menu-cont.is-open {
+    display: block;
   }
   .header {
     position: relative;
