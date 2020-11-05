@@ -1,5 +1,5 @@
 .first-section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   padding-top: 94px;
 }
 
@@ -7,7 +7,7 @@
 .all-button {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .project:not(:last-child) {
@@ -41,16 +41,8 @@
 
 .border {
   position: relative;
-  // width: 370px;
   border: 1px solid #eeeeee;
-  // margin-right: 30px;
-  // margin-bottom: 30px;
-  // &:nth-child(3n) {
-  //   margin-right: 0;
-  // }
-  // &:nth-last-child(-n + 3) {
-  //   margin-bottom: 0;
-  // }
+
 }
 .img-cards {
   max-width: 100%; 
@@ -97,6 +89,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 }
 .our-projects {
   font-weight: 700;
@@ -122,30 +115,57 @@
     flex-wrap: wrap;
    justify-content: start; 
   }
-  .border {
-    width: 450px;
+  .project:not(:nth-last-child(-n+2)){
+    margin-bottom: 15px;
   }
+  .border:not(:last-child) {
+    margin-bottom: 35px;
+   }
+  // .border {
+  //   width: 450px;
+  // }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    
+
     .border {
       // display: flex;
      width: 354px;  
+     &:not(:last-child) {
+      margin-bottom: 30px;
+     }
      
    }
    .list-cards {
     //  flex-wrap: wrap;
      justify-content: space-between;
    }
+   .all-button {
+    margin-bottom: 30px;
+  }
    }
    @media screen and (min-width: 1200px) {
+
+    .first-section {
+      padding-bottom: 94px;
+      
+    }
 
  .border {
       // display: flex;
      width: 370px;  
      
-   }
+     
+     &:not(:nth-last-child(-n+3)) {
+       margin-bottom: 30px;
+     }
+     }
+   
    .list-cards {
      justify-content: space-between;
    }
+   .all-button {
+    margin-bottom: 50px;
+  }
   }
