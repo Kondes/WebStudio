@@ -120,7 +120,7 @@ img {
   position: absolute;
   content: '';
   bottom: 0;
-  width: 48px;
+  width: 70px;
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
@@ -203,6 +203,9 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .navigation .nav-list-link {
+    padding-bottom: 8px;
+  }
   .mobile-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -238,6 +241,7 @@ img {
   }
   .menu-cont.is-open {
     display: block;
+    z-index: 1;
   }
   .header {
     position: relative;
@@ -326,7 +330,7 @@ img {
 
 .first-section {
   padding-bottom: 60px;
-  padding-top: 94px;
+  padding-top: 60px;
 }
 
 .all-button {
@@ -771,6 +775,7 @@ img {
             align-items: center;
   }
   .send-button {
+    margin-top: 15px;
     margin-left: 12px;
   }
   .text-mail {
