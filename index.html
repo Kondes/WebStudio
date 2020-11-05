@@ -19,7 +19,7 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container">
+      <div class="container ">
         <nav class="navigation">
          <div class="mobile-menu">
            <a class="logo link" href=""
@@ -28,16 +28,16 @@
           <button type="button" class="menu-button is-open" data-menu-button>
             <svg width="24" height="24" aria-label="переключатель меню">
               <use
-                class="icon-menu"
+                class="icon-cross"
                 href="./images/sprite.svg#icon-close-ic"
               ></use>
-              <use class="icon-cross"
+              <use class="icon-menu"
               href="./images/sprite.svg#icon-menu"></use>
             </svg>
           </button>
          </div>
           
-          <div class="menu-cont" data-menu>
+          <div class="menu-cont is-open" data-menu>
           
             <ul class="navigation-list list">
             <li class="navigation-list-item">
@@ -570,7 +570,8 @@
         </form>
       </div>
     </footer>
-    <div class="backdrop is-hidden modal" data-modal>
+    <div class="backdrop is-hidden " data-modal>
+     <div class="modal">
       <button type="button" class="close-btn" data-modal-close>
         <svg width="18" height="18">
           <use href="./images/sprite.svg#icon-close-ic"></use>
@@ -646,6 +647,7 @@
         </label>
         <button type="submit" class="modal-form-btn">Отправить</button>
       </form>
+    </div>
     </div>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
