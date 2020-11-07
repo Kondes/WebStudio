@@ -248,10 +248,14 @@ img {
 }
 
 .color-agree {
+  display: inline;
   color: #2196f3;
 }
 
 .modal-label-agree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
