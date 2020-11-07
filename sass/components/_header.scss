@@ -1,13 +1,14 @@
-// .header {
-//   position: fixed;
-//   z-index: 100;
-//   left: 70px;
-//   background-color: white;
+.header {
+  position: fixed;
+  z-index: 100;
+  
+  background-color: white;
+  width: 100%;
  
-// }
-// .fix {
-//   padding-top: 80px;
-// }
+}
+.fix {
+  padding-top: 80px;
+}
 
 .navigation-list-link {
   display: block;
@@ -183,6 +184,17 @@
 .header-mail{
   display: block;
   margin-bottom: 16px;
+}
+.header {
+  position: fixed;
+  z-index: 100;
+  
+  background-color: white;
+  width: 100%;
+ 
+}
+.fix {
+  padding-top: 60px;
 }
 
 

@@ -63,6 +63,17 @@ img {
   color: #000000;
 }
 
+.header {
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+}
+
+.fix {
+  padding-top: 80px;
+}
+
 .navigation-list-link {
   display: block;
   text-align: center;
@@ -278,6 +289,15 @@ img {
   .header-mail {
     display: block;
     margin-bottom: 16px;
+  }
+  .header {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+  }
+  .fix {
+    padding-top: 60px;
   }
 }
 
