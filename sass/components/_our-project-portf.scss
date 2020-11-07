@@ -3,7 +3,6 @@
   padding-top: 60px;
 }
 
-
 .all-button {
   display: flex;
   justify-content: center;
@@ -28,8 +27,8 @@
   padding-right: 22px;
   padding-left: 22px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: $accent-color;
@@ -41,12 +40,10 @@
 
 .border {
   position: relative;
-  border: 1px solid #eeeeee;
-
 }
 .img-cards {
-  max-width: 100%; 
- }
+  max-width: 100%;
+}
 .shadow {
   display: block;
   &:hover {
@@ -84,15 +81,13 @@
 }
 
 @media screen and (min-width: 768px) {
-
-.container .list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
+  .container .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .our-projects {
-  white-space: nowrap;
+  // white-space: nowrap;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -109,54 +104,52 @@
   color: $primary-text-color;
 }
 .pictures-items {
+  border: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
 }
 @media screen and (max-width: 767px) {
   .all-button {
     flex-wrap: wrap;
-   justify-content: start; 
+    justify-content: start;
   }
-  .project:not(:nth-last-child(-n+2)){
+  .project:not(:nth-last-child(-n + 2)) {
     margin-bottom: 15px;
   }
   .border:not(:last-child) {
     margin-bottom: 35px;
-   }
   }
+}
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .border {
-     width: 354px;  
-     &:not(:last-child) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .border {
+    width: 354px;
+    &:not(:last-child) {
       margin-bottom: 30px;
-     }
-     
-   }
-   .list-cards {
-     justify-content: space-between;
-   }
-   .all-button {
+    }
+  }
+  .list-cards {
+    justify-content: space-between;
+  }
+  .all-button {
     margin-bottom: 30px;
   }
-   }
-   @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
+  .first-section {
+    padding-bottom: 94px;
+  }
 
-    .first-section {
-      padding-bottom: 94px;
-      
+  .border {
+    width: 370px;
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
     }
+  }
 
- .border {
-     width: 370px;  
-     &:not(:nth-last-child(-n+3)) {
-       margin-bottom: 30px;
-     }
-     }
-   
-   .list-cards {
-     justify-content: space-between;
-   }
-   .all-button {
+  .list-cards {
+    justify-content: space-between;
+  }
+  .all-button {
     margin-bottom: 50px;
   }
-  }
+}
