@@ -149,10 +149,11 @@
   margin-bottom: 4px;
 }
 .modal-label-agree {
+  white-space: nowrap;
   display: flex;
   justify-content: center;
   align-content: center;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.03em;
   color: $primary-text-color;
   margin-bottom: 30px;
@@ -175,7 +176,11 @@
     border-color: $accent-color;
   }
 }
-
+@media screen and (min-width: 1200px) {
+.modal-label-agree {
+  font-size: 14px;
+}
+}
 .modal-form-btn {
   margin: auto;
   align-self: flex-start;
