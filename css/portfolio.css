@@ -504,6 +504,9 @@ img {
   .border:not(:last-child) {
     margin-bottom: 35px;
   }
+  .quality {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
